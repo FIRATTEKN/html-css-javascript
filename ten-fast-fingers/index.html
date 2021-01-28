@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>ten fast fingers</title>
+</head>
+
+<body>
+    <div class="container p-5" style="width: 50%;">
+        <h1 class="app-title mb-3">Ten Fast Fingers</h1>
+
+        <div class="card">
+            <div class="card-body" id="topCard" style="font-size: 25px;">
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <input id="txtTaskName" name="taskName" type="text" class="form-control p-4" placeholder=""
+                        aria-describedby="btnAddNewTask">
+                    <div class="input-group-append">
+                        <div id="timer" style="padding: 10px; background-color: aqua;"></div>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn " type="button" onclick="refresh()" id="refBtn">
+                            <i class="fa fa-retweet fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="resultCard">
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
